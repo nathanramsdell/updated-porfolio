@@ -13,8 +13,8 @@ function App() {
   useEffect(() => {
     const ctx = gsap.context((self) => {
       let main = gsap.timeline()
-      main.add(heroGsap())
-      .add(showcasePinGsap(), ">")
+      main.add(() => heroGsap())
+      .add(() => showcasePinGsap(), ">")
         
 
 
